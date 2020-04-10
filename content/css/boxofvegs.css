@@ -478,7 +478,13 @@ footer {
     display: block;
     transition: .4s ease;
 }
-
+.product-box .product-instock {
+    font-size: 15px;
+    color: #252525;
+    line-height: 1;
+    display: block;
+    transition: .4s ease;
+}
 .product-box .product-hover {
     position: absolute;
     transition: 0.3s ease;
@@ -535,7 +541,9 @@ footer {
 .product-box:hover .product-price {
     transform: translateY(-20px);
 }
-
+.product-box:hover .product-instock {
+    transform: translateY(-20px);
+}
 .product-box:hover .box-product-img img {
     transform: scale(1.1);
     transform-origin: 50% 50%;
