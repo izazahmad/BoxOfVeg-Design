@@ -81,3 +81,50 @@ $(function () {
         }, 1250, "easeInOutExpo");
     });
 });
+/*==============================================
+    shop sidebar fixed position open and close
+===============================================*/
+(function ($) {
+    function mediaSize() {
+        if (window.matchMedia('(min-width:1200px)').matches) {
+            $('#bov-shop-layout #bov-shop-sidebar ').removeClass('fixed')
+            $('#bov-shop-layout #bov-shop-sidebar ').removeAttr("style");
+            $('#sidebar-close-btn').hide()
+            $('#show-sidebar').hide()
+            $('.shop-products-top .col-4.text-right.hide-show').hide()
+            $('#bov-shop-layout .sidebar-background').hide()
+        } else {
+            $('#bov-shop-layout #bov-shop-sidebar ').addClass('fixed')
+            $('#bov-shop-layout .sidebar-background').hide()
+            $('#sidebar-close-btn').show()
+            $('#show-sidebar').show()
+            $('.shop-products-top .col-4.text-right.hide-show').show()
+        }
+    };
+    mediaSize();
+    window.addEventListener('resize', mediaSize, false);
+})(jQuery);
+// sidebar show hide button controls
+function sidebarBtnControl() {
+    $('#show-sidebar').on('click', function (event) {
+        event.preventDefault();
+        $('#bov-shop-layout #bov-shop-sidebar').css({
+            left: '0',
+            visibility: 'visible'
+        });
+        $('#bov-shop-layout .sidebar-background').css({
+            display: 'block'
+        });
+    });
+    $('#sidebar-close-btn').on('click', function (envent) {
+        event.preventDefault();
+        $('#bov-shop-layout #bov-shop-sidebar').css({
+            left: '-100%',
+            visibility: 'hidden'
+        });
+        $('#bov-shop-layout .sidebar-background').css({
+            display: 'none'
+        });
+    });
+}
+sidebarBtnControl()
