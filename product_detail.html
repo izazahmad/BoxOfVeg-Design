@@ -83,6 +83,99 @@
             </div>
         </nav>
     </header>
+    <!-- breadcrumb-->
+    <section class="bov-breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a class="breadcrumb-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a class="breadcrumb-link" href="shop.html"><i class="fa fa-store"></i> Shop</a></li>
+                <li><a class="breadcrumb-link"> Product Detail</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- product Detail-->
+    <section id="product-detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="product-detail-img">
+                        <div class="img-block">
+                            <div class="product-img-block">
+                                <img src="content/images/products/apple.jpg" alt="product">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="product-info">
+                        <h5 class="product-category color-type">Fruits</h5>
+                        <h3 class="product-name">Apple</h3>
+                        <p class="product-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quibusdam debitis.
+                        </p>
+                        <div class="price-rate">
+                            <h3 class="product-price">£20.00</h3>
+                            <h3 class="product-instock">Available</h3>
+                            <div class="rating">
+                                <div id="product-rating"></div>
+                                <div class="rating-count">
+                                    <span>(4)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-quantity">
+                            <label for="quantity">Quantity:</label>
+                            <input class="square-input" id="quantity" type="number" min="1" value="1">
+                        </div>
+                        <div class="product-select">
+                            <button class="add-to-cart normal-btn outline">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="product-user-review">
+                        <div class="reviews-tab">
+                            <div class="review-top-block">
+                                <div class="review-top">
+                                    <h2>Customer Reviews</h2>
+                                    <span>(03)</span>
+                                </div>
+                            </div>
+                            <div class="review-bottom">
+                                <div class="user-review-detail">
+                                    <h5 class="review-date">13 March 2020</h5>
+                                    <h3 class="user-name">Izaz Shaikh</h3>
+                                    <div id="user-rated"></div>
+                                    <p class="user-comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non doloribus, corrupti ex perspiciatis minus excepturi eligendi ratione est sed consequatur laborum aperiam ipsum delectus nihil quaerat maiores eos ullam animi.</p>
+                                </div>
+                                <div class="add-review">
+                                    <form action="" method="post">
+                                        <div class="add-review-top">
+                                            <h2>Add Review</h2>
+                                        </div>
+                                        <div class="add-rating">
+                                            <div class="rate-stars">
+                                                <h5>Your Rating:</h5>
+                                                <div id="add-rate"></div>
+                                            </div>
+                                            <div class="user-comment">
+                                                <textarea class="textarea-form" id="review" name="" cols="30" rows="4" placeholder="Message"></textarea>
+                                            </div>
+                                            <button class="normal-btn">
+                                                Submit Review
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- temp Spaces -->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <!-- Footer -->
     <footer>
         <div class="boxofvegs-contact">
@@ -153,7 +246,7 @@
     <script src="content/js/easing/jquery.easing.1.3.js"></script>
     <!-- Magnific popup -->
     <script src="content/js/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <!-- rate yo for star -->
+    <!-- rate-yo for star -->
     <script src="content/js/rate-yo/jquery.rateyo.min.js"></script>
     <!-- zoom jquery to enlarge image-->
     <script src="content/js/zoom/jquery.zoom.min.js"></script>

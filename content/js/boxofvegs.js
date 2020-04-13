@@ -128,3 +128,33 @@ function sidebarBtnControl() {
     });
 }
 sidebarBtnControl()
+/*==================================
+            product rating
+====================================*/
+$(function () {
+    $("#product-rating").rateYo({
+        rating: 5,
+        numStars: 5,
+        maxValue: 5,
+        halfstar: true,
+        starWidth: "13px"
+    });
+    $("#user-rated").rateYo({
+        rating: 5,
+        numStars: 5,
+        maxValue: 5,
+        halfstar: true,
+        starWidth: "13px"
+    });
+    $("#add-rate").rateYo({
+        rating: 5,
+        numStars: 5,
+        maxValue: 5,
+        halfstar: true,
+        starWidth: "15px"
+    });
+});
+/*==================================
+            shop detail zoom
+====================================*/
+$('#product-detail .product-img-block').zoom({})
