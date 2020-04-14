@@ -139,7 +139,7 @@ $(function () {
         halfstar: true,
         starWidth: "13px"
     });
-    $("#user-rated").rateYo({
+    $(".user-rated").rateYo({
         rating: 5,
         numStars: 5,
         maxValue: 5,
