@@ -82,137 +82,97 @@
             <ul>
                 <li><a class="breadcrumb-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
                 <li><a class="breadcrumb-link" href="shop.html"><i class="fa fa-store"></i> Shop</a></li>
-                <li><a class="breadcrumb-link"><i class="fa fa-shopping-cart"></i> Shopping Cart</a></li>
+                <li><a class="breadcrumb-link" href="shop_cart.html"><i class="fa fa-shopping-cart"></i> Shopping Cart</a></li>
+                <li><a class="breadcrumb-link">Checkout</a></li>
             </ul>
         </div>
     </div>
-    <!-- Shopping Cart -->
-    <section id="shop-cart">
+    <!-- Shop Checkout -->
+    <section id="shop-checkout">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="cart-table">
-                        <table class="table table-responsive">
-                            <colgroup>
-                                <col span="1" style="width: 15%">
-                                <col span="1" style="width: 30%">
-                                <col span="1" style="width: 15%">
-                                <col span="1" style="width: 15%">
-                                <col span="1" style="width: 15%">
-                                <col span="1" style="width: 10%">
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th class="product-image" scope="col">Image</th>
-                                    <th class="product-name" scope="col">Product Name</th>
-                                    <th class="product-price" scope="col">Price</th>
-                                    <th class="product-quantity" scope="col">Quantity</th>
-                                    <th class="product-total" scope="col">Total</th>
-                                    <th class="product-clear" scope="col"><button class="square-btn"><i class="fas fa-times"></i></button></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="product-image">
-                                        <div class="img-wrapper">
-                                            <img src="content/images/products/apple.jpg" alt="product image">
-                                        </div>
-                                    </td>
-                                    <td class="product-name"> Apple</td>
-                                    <td class="product-price">£2.00</td>
-                                    <td class="product-quantity">
-                                        <input class="quantity square-input" type="number" min="1" value="1">
-                                    </td>
-                                    <td class="product-total">£2.00</td>
-                                    <td class="product-clear"><button class="square-btn"><i class="fas fa-times"></i></button></td>
-                                </tr>
-                                <tr>
-                                    <td class="product-image">
-                                        <div class="img-wrapper">
-                                            <img src="content/images/products/broccoli.jpg" alt="product image">
-                                        </div>
-                                    </td>
-                                    <td class="product-name"> Broccoli</td>
-                                    <td class="product-price">£1.23</td>
-                                    <td class="product-quantity">
-                                        <input class="quantity square-input" type="number" min="1" value="1">
-                                    </td>
-                                    <td class="product-total">£1.23</td>
-                                    <td class="product-clear"><button class="square-btn"><i class="fas fa-times"></i></button></td>
-                                </tr>
-                                <tr>
-                                    <td class="product-image">
-                                        <div class="img-wrapper">
-                                            <img src="content/images/products/orange.jpg" alt="product image">
-                                        </div>
-                                    </td>
-                                    <td class="product-name"> Orange</td>
-                                    <td class="product-price">£1.00</td>
-                                    <td class="product-quantity">
-                                        <input class="quantity square-input" type="number" min="1" value="2">
-                                    </td>
-                                    <td class="product-total">£2.00</td>
-                                    <td class="product-clear"><button class="square-btn"><i class="fas fa-times"></i></button></td>
-                                </tr>
-                                <tr>
-                                    <td class="product-image">
-                                        <div class="img-wrapper">
-                                            <img src="content/images/products/spinach.jpg" alt="product image">
-                                        </div>
-                                    </td>
-                                    <td class="product-name"> Spinach</td>
-                                    <td class="product-price">£2.00</td>
-                                    <td class="product-quantity">
-                                        <input class="quantity square-input" type="number" min="1" value="1">
-                                    </td>
-                                    <td class="product-total">£2.00</td>
-                                    <td class="product-clear"><button class="square-btn"><i class="fas fa-times"></i></button></td>
-                                </tr>
-                            </tbody>
-                        </table>
+            <form action="" method="post">
+                <div class="row">
+                    <div class="col-lg-8 col-12">
+                        <h2 class="form-title">Billing Details</h2>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputFirstName">First Name*</label>
+                                <input class="square-input-bg" id="inputFirstName" type="text" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputLastName">Last Name*</label>
+                                <input class="square-input-bg" id="inputLastName" type="text" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputCountry">Country*</label>
+                            <input class="square-input-bg" id="inputCountry" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputStreet">Street Address*</label>
+                            <input class="square-input-bg" id="inputStreet" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputZip">Postcode</label>
+                            <input class="square-input-bg" id="inputZip" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputCity">Town / City*</label>
+                            <input class="square-input-bg" id="inputCity" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPhone">Phone*</label>
+                            <input class="square-input-bg" id="inputPhone" type="text" required>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-12">
-                    <div class="back-to-shop">
-                        <button class="square-btn smooth">Back To Shop</button>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-12 text-right">
-                    <button class="square-btn black cart-update">Update Cart</button>
-                </div>
-            </div>
-            <div class="row justify-content-end">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="cart-total-block">
-                        <h2>Cart Total</h2>
-                        <table class="table">
-                            <colgroup>
-                                <col span="1" style="width: 50%">
-                                <col span="1" style="width: 50%">
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <th>SUBTOTAL</th>
-                                    <td>£7.23</td>
-                                </tr>
-                                <tr>
-                                    <th>SHIPPING</th>
-                                    <td>
-                                        <p>Free Shipping</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>TOTAL</th>
-                                    <td>£7.23</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="checkout">
-                            <button class="normal-btn" onclick="window.location.href='shop_checkout.html'">Proceed to Checkout</button>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <h2 class="form-title">Your Order</h2>
+                        <div class="shopping-cart">
+                            <div class="cart-total">
+                                <table class="table">
+                                    <colgroup>
+                                        <col span="1" style="width: 50%">
+                                        <col span="1" style="width: 50%">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th class="name">Apple × <span>1</span></th>
+                                            <td class="price black">£2.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="name">Broccoli × <span>1</span></th>
+                                            <td class="price black">£1.23</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="name">Orange × <span>2</span></th>
+                                            <td class="price black">£2.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="name">Spinach × <span>1</span></th>
+                                            <td class="price black">£2.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Subtotal</th>
+                                            <td class="price">£7.23</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Shipping</th>
+                                            <td>
+                                                <p>Free shipping</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>Total</th>
+                                            <td class="total">£7.23</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <button class="normal-btn submit-btn">Place order</button>
                         </div>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </section>
     <!-- Footer -->

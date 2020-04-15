@@ -81,136 +81,29 @@
         <div class="container">
             <ul>
                 <li><a class="breadcrumb-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a class="breadcrumb-link" href="shop.html"><i class="fa fa-store"></i> Shop</a></li>
-                <li><a class="breadcrumb-link"><i class="fa fa-shopping-cart"></i> Shopping Cart</a></li>
+                <li><a class="breadcrumb-link"><i class="fa fa-user"></i> Login</a></li>
             </ul>
         </div>
     </div>
-    <!-- Shopping Cart -->
-    <section id="shop-cart">
+    <!-- Login Account -->
+    <section class="login-account">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <div class="cart-table">
-                        <table class="table table-responsive">
-                            <colgroup>
-                                <col span="1" style="width: 15%">
-                                <col span="1" style="width: 30%">
-                                <col span="1" style="width: 15%">
-                                <col span="1" style="width: 15%">
-                                <col span="1" style="width: 15%">
-                                <col span="1" style="width: 10%">
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th class="product-image" scope="col">Image</th>
-                                    <th class="product-name" scope="col">Product Name</th>
-                                    <th class="product-price" scope="col">Price</th>
-                                    <th class="product-quantity" scope="col">Quantity</th>
-                                    <th class="product-total" scope="col">Total</th>
-                                    <th class="product-clear" scope="col"><button class="square-btn"><i class="fas fa-times"></i></button></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="product-image">
-                                        <div class="img-wrapper">
-                                            <img src="content/images/products/apple.jpg" alt="product image">
-                                        </div>
-                                    </td>
-                                    <td class="product-name"> Apple</td>
-                                    <td class="product-price">£2.00</td>
-                                    <td class="product-quantity">
-                                        <input class="quantity square-input" type="number" min="1" value="1">
-                                    </td>
-                                    <td class="product-total">£2.00</td>
-                                    <td class="product-clear"><button class="square-btn"><i class="fas fa-times"></i></button></td>
-                                </tr>
-                                <tr>
-                                    <td class="product-image">
-                                        <div class="img-wrapper">
-                                            <img src="content/images/products/broccoli.jpg" alt="product image">
-                                        </div>
-                                    </td>
-                                    <td class="product-name"> Broccoli</td>
-                                    <td class="product-price">£1.23</td>
-                                    <td class="product-quantity">
-                                        <input class="quantity square-input" type="number" min="1" value="1">
-                                    </td>
-                                    <td class="product-total">£1.23</td>
-                                    <td class="product-clear"><button class="square-btn"><i class="fas fa-times"></i></button></td>
-                                </tr>
-                                <tr>
-                                    <td class="product-image">
-                                        <div class="img-wrapper">
-                                            <img src="content/images/products/orange.jpg" alt="product image">
-                                        </div>
-                                    </td>
-                                    <td class="product-name"> Orange</td>
-                                    <td class="product-price">£1.00</td>
-                                    <td class="product-quantity">
-                                        <input class="quantity square-input" type="number" min="1" value="2">
-                                    </td>
-                                    <td class="product-total">£2.00</td>
-                                    <td class="product-clear"><button class="square-btn"><i class="fas fa-times"></i></button></td>
-                                </tr>
-                                <tr>
-                                    <td class="product-image">
-                                        <div class="img-wrapper">
-                                            <img src="content/images/products/spinach.jpg" alt="product image">
-                                        </div>
-                                    </td>
-                                    <td class="product-name"> Spinach</td>
-                                    <td class="product-price">£2.00</td>
-                                    <td class="product-quantity">
-                                        <input class="quantity square-input" type="number" min="1" value="1">
-                                    </td>
-                                    <td class="product-total">£2.00</td>
-                                    <td class="product-clear"><button class="square-btn"><i class="fas fa-times"></i></button></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-12">
-                    <div class="back-to-shop">
-                        <button class="square-btn smooth">Back To Shop</button>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-12 text-right">
-                    <button class="square-btn black cart-update">Update Cart</button>
-                </div>
-            </div>
-            <div class="row justify-content-end">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="cart-total-block">
-                        <h2>Cart Total</h2>
-                        <table class="table">
-                            <colgroup>
-                                <col span="1" style="width: 50%">
-                                <col span="1" style="width: 50%">
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <th>SUBTOTAL</th>
-                                    <td>£7.23</td>
-                                </tr>
-                                <tr>
-                                    <th>SHIPPING</th>
-                                    <td>
-                                        <p>Free Shipping</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>TOTAL</th>
-                                    <td>£7.23</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="checkout">
-                            <button class="normal-btn" onclick="window.location.href='shop_checkout.html'">Proceed to Checkout</button>
+                <div class="mx-auto col-md-6 col-12">
+                    <h1 class="title">Login</h1>
+                    <form>
+                        <label for="user-name">Username *</label>
+                        <input class="square-input" id="user-name" type="text">
+                        <label for="password">Password *</label>
+                        <input class="square-input" id="password" type="text">
+                        <div class="account-forgot text-right">
+                            <a href="#">Forget Your Password</a>
                         </div>
-                    </div>
+                        <div class="account-function">
+                            <button class="square-btn">Sign in</button>
+                            <a class="create-account" href="register.html">Or Create an Account</a>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
