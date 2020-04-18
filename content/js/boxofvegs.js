@@ -10,11 +10,19 @@ $(function () {
 $(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() < 50) {
-            $("nav").removeClass("boxofveg-top-nav");
+            $("#bov-usr-nav").removeClass("boxofveg-top-nav");
         } else {
-            $("nav").addClass("boxofveg-top-nav");
+            $("#bov-usr-nav").addClass("boxofveg-top-nav");
         }
     });
+});
+/*==================================
+Add and remove active class on click
+====================================*/
+$(function () {
+    $('.nav-item a').filter(function () {
+        return this.href == location.href
+    }).parent().addClass('active').siblings().removeClass('active')
 });
 /*==================================
                 Logo
@@ -29,7 +37,7 @@ $(function () {
         })
 });
 /*==================================
-                owl carousel slider
+         owl carousel slider
 ====================================*/
 $(function () {
     //owl carousel categories slider
@@ -158,3 +166,14 @@ $(function () {
             shop detail zoom
 ====================================*/
 $('#product-detail .product-img-block').zoom({})
+/*==================================
+    Admin Panel sidebar toggle
+====================================*/
+$(function () {
+    //Toggle side navigation
+    $("#sidebarToggler").on('click', function (e) {
+        e.preventDefault();
+        $(".sidebar-block").toggleClass("toggled");
+        $(".sidebar").toggleClass("toggled");
+    });
+});

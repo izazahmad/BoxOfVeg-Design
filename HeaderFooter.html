@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Required meta tag -->
     <meta charset="UTF-8">
@@ -8,7 +9,6 @@
     <meta name="author" content="Izaz Shaikh">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="veiwport" content="width=device-width, initial-scale=1.0">
-    <meta>
     <!-- Title -->
     <title>Box of vegetables</title>
     <!-- Favicon -->
@@ -29,6 +29,7 @@
     <!-- boxofvegs css -->
     <link rel="stylesheet" href="content/css/boxofvegs.css">
 </head>
+
 <body>
     <header>
         <!-- Navigation -->
@@ -44,7 +45,7 @@
                 </button>
                 <div class="collapse navbar-collapse nav-top-center" id="boxofvegs-menu">
                     <ul class="navbar-nav nav-content-center">
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
                         </li>
                         <li class="nav-item">
@@ -62,12 +63,43 @@
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">
-                                <i class="fa fa-user"></i> Login/Register</a>
+                            <div class="dropdown">
+                                <a class="nav-link" href="login.html">
+                                    <i class="fa fa-user"></i> Login/Register
+                                </a>
+                                <ul class="dropdown-items">
+                                    <li><a class="dropdown-lnk" href="admin.html">Admin Panel</a></li>
+                                    <li><a class="dropdown-lnk" href="register.html">Register</a></li>
+                                    <li><a class="dropdown-lnk" href="#">Profile</a></li>
+                                    <li><a class="dropdown-lnk" href="#">Order History</a></li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li><a class="text-danger" href="#">Logout</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="shop_cart.html">
-                                <i class="fa fa-shopping-cart"></i>Cart</a>
+
+                            <div class="dropdown">
+                                <a class="nav-link" href="shop_cart.html">
+                                    <i class="fa fa-shopping-cart"></i> Cart
+                                </a>
+                                <ul class="dropdown-items">
+                                    <li><span>Apple (1) - £2.00 </span><a class="dropdown-lnk right" href="#"><i class="fas fa-times"></i></a></li>
+                                    <li><span>Broccoli (1) - £1.23 </span><a class="dropdown-lnk right" href="#"><i class="fas fa-times"></i></a></li>
+                                    <li><span>Orange (2) - £2.00 </span><a class="dropdown-lnk right" href="#"><i class="fas fa-times"></i></a></li>
+                                    <li><span>spinach (1) - £2.00 </span><a class="dropdown-lnk right" href="#"><i class="fas fa-times"></i></a></li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li><a class="dropdown-lnk" href="shop_cart.html">Total <span>£7.23</span></a></li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li><a class="dropdown-lnk" href="shop_checkout.html">Checkout</a></li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -153,4 +185,5 @@
     <!-- boxofvegs javascript-->
     <script src="content/js/boxofvegs.js"></script>
 </body>
+
 </html>
