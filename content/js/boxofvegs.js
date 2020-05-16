@@ -51,14 +51,7 @@ $(function () {
         smartSpeed: 450,
         autoplayHoverPause: true,
         animateIn: 'flipInX',
-        animateOut: 'slideOutDown',
-        responsive: {
-            768: {
-                autoplay: false,
-                animateIn: false,
-                animateOut: false
-            }
-        }
+        animateOut: 'slideOutDown'
     });
     // magnific popup- it opens up the image by clicking on it
     $(".img-block").magnificPopup({
@@ -173,7 +166,37 @@ $(function () {
     //Toggle side navigation
     $("#sidebarToggler").on('click', function (e) {
         e.preventDefault();
-        $(".sidebar-block").toggleClass("toggled");
+        $("#sidebar-content-wrapper").toggleClass("toggled");
+        $("#admin-footer").toggleClass("toggled");
         $(".sidebar").toggleClass("toggled");
     });
 });
+/*==================================
+    Bootstrap data tables
+====================================*/
+$(function () {
+    $("#datatable").DataTable({
+        "pagingType": "full_numbers",
+        "oLanguage": {
+            "oPaginate": {
+                "sFirst": "<<",
+                "sPrevious": "<",
+                "sNext": ">",
+                "sLast": ">>"
+            }
+
+        }
+    });
+});
+/*==================================
+    display image preview on change
+====================================*/
+function onchangeUrl(input) {
+    if(input.files && input.files[0]) {
+        var reader= new FileReader();
+        reader.onload = function (e) {
+            $('#image-prev').attr('src',e.target.result);
+        };
+        reader.readAsDataURL(input.files[0]);
+    }
+}

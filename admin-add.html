@@ -94,13 +94,54 @@
         </ul>
         <div id="sidebar-content-wrapper">
             <div class="container-fluid">
-                <!-- Temp space -->
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <!-- breadcrumb-->
+                <div class="bov-breadcrumb admin">
+                    <ul>
+                        <li><a class="breadcrumb-link" href="admin-general.html"><i class="far fa-file"></i> Detail</a></li>
+                        <li><a class="breadcrumb-link"><i class="fas fa-plus-square"></i> Insert</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-header align-middle">
+                        <i class="fas fa-plus-square"></i> Insert
+                    </div>
+                    <div class="card-body">
+                        <!-- Insert form -->
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 col-12">
+                                        <form>
+                                            <label for="user-name">Name</label>
+                                            <input class="square-input" id="user-name" type="text">
+                                            <label for="description">Description</label>
+                                            <input class="square-input" id="description" type="text">
+                                            <label for="image">Image</label>
+                                            <input class="square-input file" id="image" type="file" onchange="onchangeUrl(this);">
+                                            <div class="account-function text-left">
+                                                <button class="square-btn black admin">Save</button>
+                                                <button class="square-btn red admin">Cancel</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="image-block">
+                                            <div class="image-wrapper">
+                                                <img id="image-prev" class="slide-img side" src="content/images/categories/fruits.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
 
-    </div>
+        </div>
     <!-- Footer -->
     <footer id="admin-footer">
         <div id="bov-footer-bottom" class="text-center">
